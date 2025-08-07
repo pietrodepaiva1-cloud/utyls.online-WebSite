@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador de Palavras - Utyls</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">⚙️ <span>Utyls</span></div>
+    <nav>
+      <a href="../index.html" class="voltar">← Voltar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contador de Palavras e Caracteres</h1>
+
+    <textarea id="entrada" placeholder="Digite seu texto aqui..." oninput="contarTudo()"></textarea>
+
+    <div class="resultados">
+      <p><strong>Palavras:</strong> <span id="palavras">0</span></p>
+      <p><strong>Caracteres (com espaços):</strong> <span id="caracteres">0</span></p>
+      <p><strong>Caracteres (sem espaços):</strong> <span id="semEspacos">0</span></p>
+      <p><strong>Linhas:</strong> <span id="linhas">0</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Utyls®</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

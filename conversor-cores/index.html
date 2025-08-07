@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversor de Códigos de Cores - Utyls</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">⚙️ <span>Utyls</span></div>
+    <nav>
+      <a href="../index.html" class="voltar">← Voltar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Conversor de Códigos de Cores</h1>
+
+    <div class="converter">
+      <textarea id="inputCor" placeholder="Digite o código da cor (HEX, RGB, HSL, CMYK)..."></textarea>
+      <button onclick="converterCor()">Converter</button>
+
+      <div id="resultado" class="resultado" style="display:none;">
+        <div id="previewCor" class="preview"></div>
+        <p><strong>HEX:</strong> <span id="hex"></span></p>
+        <p><strong>RGB:</strong> <span id="rgb"></span></p>
+        <p><strong>HSL:</strong> <span id="hsl"></span></p>
+        <p><strong>CMYK:</strong> <span id="cmyk"></span></p>
+      </div>
+
+      <p id="erro" style="color:#ff4444; font-weight:bold;"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Utyls®</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

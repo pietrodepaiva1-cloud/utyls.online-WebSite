@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Senhas - Utyls</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">⚙️ <span>Utyls</span></div>
+    <nav>
+      <a href="../index.html" class="voltar">← Voltar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Gerador de Senhas Seguras</h1>
+
+    <div class="gerador">
+      <label for="tamanho">Tamanho da Senha: <span id="valorTamanho">16</span></label>
+      <input type="range" id="tamanho" min="4" max="64" value="16" oninput="atualizarTamanho()"/>
+
+      <div class="checkboxes">
+        <label><input type="checkbox" id="maiusculas" checked /> Incluir Letras Maiúsculas</label>
+        <label><input type="checkbox" id="minusculas" checked /> Incluir Letras Minúsculas</label>
+        <label><input type="checkbox" id="numeros" checked /> Incluir Números</label>
+        <label><input type="checkbox" id="especiais" checked /> Incluir Caracteres Especiais</label>
+      </div>
+
+      <div class="botoes">
+        <button onclick="gerarSenha()">Gerar Senha</button>
+        <button onclick="copiarSenha()">Copiar</button>
+        <button onclick="limpar()">Limpar</button>
+      </div>
+
+      <textarea id="saida" placeholder="Sua senha gerada aparecerá aqui..." readonly></textarea>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Utyls®</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

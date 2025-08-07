@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografia - Utyls</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">⚙️ <span>Utyls</span></div>
+    <nav>
+      <a href="../index.html" class="voltar">← Voltar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Criptografar e Descriptografar Texto</h1>
+
+    <div class="converter">
+      <select id="metodo">
+        <option value="base64">Base64</option>
+        <option value="cesar">Cifra de César (Deslocamento 3)</option>
+        <option value="reverso">Reverso</option>
+      </select>
+
+      <textarea id="entrada" placeholder="Digite seu texto aqui..."></textarea>
+
+      <div class="botoes">
+        <button onclick="criptografar()">Criptografar</button>
+        <button onclick="descriptografar()">Descriptografar</button>
+      </div>
+
+      <textarea id="saida" placeholder="Resultado..." readonly></textarea>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Utyls®</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

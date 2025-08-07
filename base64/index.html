@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base64 - Utyls</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">⚙️ <span>Utyls</span></div>
+    <nav>
+      <a href="../index.html" class="voltar">← Voltar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Conversor Base64</h1>
+
+    <div class="converter">
+      <textarea id="entrada" placeholder="Digite o texto ou Base64 aqui..."></textarea>
+
+      <div class="botoes">
+        <button onclick="codificarBase64()">Texto → Base64</button>
+        <button onclick="decodificarBase64()">Base64 → Texto</button>
+      </div>
+
+      <textarea id="saida" placeholder="Resultado..." readonly></textarea>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Utyls®</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
